@@ -1,0 +1,10 @@
+.header{
+    background-color: blue;
+}
+.content{
+    background-color: rgb(245, 161, 6);
+    height: 90vh;
+}
+.footer{
+    background-color: rgb(255, 0, 170);
+}
