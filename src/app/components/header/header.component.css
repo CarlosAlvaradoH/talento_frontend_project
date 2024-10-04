@@ -13,3 +13,9 @@
   .dropdown-toggle:not(:focus) {
     outline: 0;
   }
+
+  .navbar-logo{
+    width: 50px !important;
+    height: 50px !important;
+
+  }
