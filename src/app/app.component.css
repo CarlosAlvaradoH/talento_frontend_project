@@ -27,3 +27,18 @@
     font-size: 1.1rem; /* Aumenta el tamaño de la fuente */
     border-radius: 0.5rem; /* Esquinas redondeadas */
 }
+
+.navbar-logo {
+    width: 150px; /* Ajusta el tamaño según tus necesidades */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Suaviza la transformación y la opacidad */
+    opacity: 1; /* Opacidad inicial */
+}
+
+.navbar-logo:hover {
+    transform: scale(1.1); /* Aumenta el tamaño al pasar el mouse */
+    opacity: 0.8; /* Reduce la opacidad para un efecto sutil */
+}
+
+.navbar-logo:active {
+    transform: scale(0.95); /* Efecto al hacer clic */
+}
