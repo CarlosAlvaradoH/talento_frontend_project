@@ -1,38 +1,10 @@
-<!-- <div class="header"> Header
-    <nav aria-label="Main Navigation">
-        <ul class="nav nav-pills nav-fill" style="font-size: 1.25rem;">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Active</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Much longer nav1 link</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link1</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#" aria-disabled="true" tabindex="-1">Disabled</a>
-            </li>
-        </ul>
-    </nav>
-</div> -->
-
 <!-- Encabezado de la página -->
 <header class="p-3 text-bg-dark">
   <div class="container">
     <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-      <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-        <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
-          <use xlink:href="#bootstrap" />
-        </svg>
-      </a>
-      <nav>
-        <div>
-            <a href="index.html">
-                <img src="../../../assets/img/tallerimg.png" class="logo" alt="LOGO" class="navbar-logo"/>
-            </a>
-        </div>
-      </nav>
+      <a href="index.html">
+        <img src="../../../assets/img/tallerimg.png" class="logo" alt="LOGO" class="navbar-logo"/>
+    </a>
 
       <!-- Barra de navegación -->
       <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
@@ -43,9 +15,9 @@
         <li><a href="#" class="nav-link px-2 text-white" data-bs-toggle="modal" data-bs-target="#quienesSomosModal">Quiénes Somos</a></li>
       </ul>
 
-      <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+      <!-- <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
         <input type="buscar" class="form-control form-control-dark text-bg-dark" placeholder="Buscar..." aria-label="Buscar">
-      </form>
+      </form> -->
 
       <div class="text-end">
         <button type="button" class="btn btn-outline-light me-2" data-bs-toggle="modal" data-bs-target="#registerModal">Regístrese</button>
@@ -156,30 +128,46 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <form>
+        <form [formGroup]="registerForm">
           <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" formControlName="nombre" placeholder="Ingrese su nombre">
           </div>
           <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
+            <label for="direccion" class="form-label">Dirección</label>
+            <input type="text" class="form-control" id="direccion" formControlName="direccion">
           </div>
-          <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          <div class="mb-3">
+            <label for="celular" class="form-label">Celular</label>
+            <input type="number" class="form-control" id="celular" formControlName="celular">
           </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <div class="mb-3">
+            <label for="vehiculoMarca" class="form-label">Vehículo - Marca</label>
+            <input type="text" class="form-control" id="vehiculoMarca" formControlName="vehiculoMarca">
+          </div>
+          <div class="mb-3">
+            <label for="vehiculoModelo" class="form-label">Modelo</label>
+            <input type="number" class="form-control" id="vehiculoModelo" formControlName="vehiculoModelo">
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" formControlName="password">
+          </div>
+          <div class="mb-3">
+            <label for="confirmarPassword" class="form-label">Repetir Password</label>
+            <input type="password" class="form-control" id="confirmarPassword" formControlName="confirmarPassword">
+          </div>
         </form>
-      </div>
+      </div>  
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-        <button type="button" class="btn btn-primary">Registrarse</button>
+        <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button> -->
+        <button type="button" class="btn btn-success" (click)="register()">Registrarse</button>
       </div>
     </div>
   </div>
   </div>
+
+
   <div class="modal fade" id="loginModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
