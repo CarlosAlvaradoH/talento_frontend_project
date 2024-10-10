@@ -1,5 +1,7 @@
+
+
 <header class="p-3 text-bg-dark">
-  <div class="container">
+ <div class="container">
     <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
       <a href="index.html">
         <img src="../../../assets/img/tallerimg.png" class="navbar-logo" alt="Logo"/>
@@ -38,7 +40,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        Esta es la sección principal de la página.
+        <p><strong>¡Bienvenidos a su centro De Servicios De TecnoMecanica!.</strong></p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -56,6 +58,8 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
+       
+       <h5>
         <ul>
           <li>Certificaciones De Calidad.</li>
           <li>Atenciòn Personalizada.</li>
@@ -69,6 +73,7 @@
           <li>Servicio de Grùa y asistencia 24/7.</li>
           <li>Membresìa De Mantenimiento Preventivo. </li>
         </ul>
+      </h5>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -86,6 +91,8 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
+        
+        <h5>
         <ul>
           <li>Revision Tenomecanica y de Emision Contaminantes.</li>
           <li>Mantenimiento Preventivo.</li>
@@ -104,6 +111,7 @@
           <li>Servicio De Lavado y Detallado Automotriz.</li>
           <li>Instalaciòn De Sistema De Seguridad.</li>
         </ul>
+      </h5>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -121,6 +129,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
+        <h5>
         <ul>
           <li>ISO 9001:2015 Sistema De Gestiòn De Calidad.</li>
           <li>Certificaciòn De Centros De Diagnostico Automotor (CDA).</li>
@@ -130,6 +139,7 @@
           <li>Certificaciòn y Calidad De Los Repuestos.</li>
           <li>Certificacion Especializadas (Diagnòstico,Eklectricidad Automotriz Etc).</li>
         </ul>
+      </h5>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -147,7 +157,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        En TecnoMaster,nos especializamos en brindar soluciones integrales para el mantenimiento y revisión técnico-mecánica de vehículos. Contamos con un equipo de profesionales altamente capacitados, comprometidos con ofrecer un servicio de calidad, garantizando la seguridad y eficiencia de tu vehículo en todo momento.
+       <h5> En TecnoMaster,nos especializamos en brindar soluciones integrales para el mantenimiento y revisión técnico-mecánica de vehículos. Contamos con un equipo de profesionales altamente capacitados, comprometidos con ofrecer un servicio de calidad, garantizando la seguridad y eficiencia de tu vehículo en todo momento.</h5>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -228,7 +238,13 @@
          </div>
           <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-          <button type="button" class="btn btn-primary">Ingresar</button>
+          <button id="btn btn-md btn-danger" data-bs-toggle="popover" data-bs-title="Popover title" data-bs-content="And here's some amazing content. It's very engaging. Right?">Ingresar</button>
+          <script>
+            document.getElementById('button1').addEventListener('click', function() {
+              alert('¡Botón presionado!');
+          });
+          </script>
+      
         </div>
       </div>
     </div>
