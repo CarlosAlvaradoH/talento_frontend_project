@@ -9,7 +9,7 @@ const routes: Routes = [
   { path: 'content', component: ContentComponent},
   { path: 'admin', component: AdminComponent },
   { path: 'user', component: UserComponent },
-  { path: 'tecnico', component: TecComponent },
+  { path: 'tec', component: TecComponent },
   { path: '', redirectTo: '/content', pathMatch: 'full' }, // Redireccionar a user por defecto
   { path: '**', redirectTo: '/content' } // Redireccionar a user si la ruta no existe
 ];
