@@ -103,153 +103,21 @@
 
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
       
-      <div class="col">
+      <div class="col" *ngFor="let mecanico of mecanicos">
         <div class="card shadow-sm">
-            <img src="../../../assets/img/mecanico1.jpg" class="card-img-top" alt="Descripción de la imagen 1">
+            <img src="{{mecanico.image}}" class="card-img-top" alt="Descripción de la imagen 1">
             <div class="card-body">
-                <p class="card-text"><strong>Carlos Albeiro Martinez</strong> mecanico de pista 1.</p>
+                <p class="card-text"><strong>{{mecanico.name}}</strong>  {{mecanico.ocupation}}</p>
                 <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">{{mecanico.btn1}}</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">{{mecanico.btn2}}</button>
                     </div>
-                    <small class="text-body-secondary">9 mins</small>
+                    <small class="text-body-secondary">Ocupado</small>
                 </div>
             </div>
         </div>
     </div>
-    
-      <div class="col">
-        <div class="card shadow-sm">
-            <img src="../../../assets/img/mecanico2.jpg" class="card-img-top" alt="Descripción de la imagen 1">
-            <div class="card-body">
-                <p class="card-text"><strong>Santiago alberto hoyos</strong> mecanico de pista 2.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
-                    </div>
-                    <small class="text-body-secondary">9 mins</small>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-
-      <div class="col">
-        <div class="card shadow-sm">
-            <img src="../../../assets/img/mecanico3.jpg" class="card-img-top" alt="Descripción de la imagen 1">
-            <div class="card-body">
-                <p class="card-text"><strong>Cristian Sandoval</strong> mecanico de linea 1.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
-                    </div>
-                    <small class="text-body-secondary">9 mins</small>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-
-    <div class="col">
-      <div class="card shadow-sm">
-          <img src="../../../assets/img/mecanico4.jpg" class="card-img-top" alt="Descripción de la imagen 1">
-          <div class="card-body">
-              <p class="card-text"><strong>Sergio Arango</strong> supervisor 1.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
-                  </div>
-                  <small class="text-body-secondary">9 mins</small>
-              </div>
-          </div>
-      </div>
-  </div>
-  
-  <div class="col">
-    <div class="card shadow-sm">
-        <img src="../../../assets/img/mecanico5.jpg" class="card-img-top" alt="Descripción de la imagen 1">
-        <div class="card-body">
-            <p class="card-text"><strong>David Hernandez</strong> supervisor 2.</p>
-            <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
-                </div>
-                <small class="text-body-secondary">9 mins</small>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="col">
-  <div class="card shadow-sm">
-      <img src="../../../assets/img/mecanico7.jpg" class="card-img-top" alt="Descripción de la imagen 1">
-      <div class="card-body">
-          <p class="card-text"><strong>Roberto Sandival</strong> tecnico 1.</p>
-          <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
-              </div>
-              <small class="text-body-secondary">9 mins</small>
-          </div>
-      </div>
-  </div>
-</div>
-
-
-<div class="col">
-  <div class="card shadow-sm">
-      <img src="../../../assets/img/mecanico8.jpg" class="card-img-top" alt="Descripción de la imagen 1">
-      <div class="card-body">
-          <p class="card-text"><strong>Alejandro Martinez</strong> tecnico 2.</p>
-          <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
-              </div>
-              <small class="text-body-secondary">9 mins</small>
-          </div>
-      </div>
-  </div>
-</div>
-
-<div class="col">
-  <div class="card shadow-sm">
-      <img src="../../../assets/img/mecanico10.jpg" class="card-img-top" alt="Descripción de la imagen 1">
-      <div class="card-body">
-          <p class="card-text"><strong>Sergio Giraldo</strong> tecnico 3.</p>
-          <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
-              </div>
-              <small class="text-body-secondary">9 mins</small>
-          </div>
-      </div>
-  </div>
-</div>
-
-<div class="col">
-  <div class="card shadow-sm">
-      <img src="../../../assets/img/mecanico14.jpg" class="card-img-top" alt="Descripción de la imagen 1">
-      <div class="card-body">
-          <p class="card-text"> <strong>Juan Alberto Perez</strong> tecnico 4.</p>
-          <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
-              </div>
-              <small class="text-body-secondary">9 mins</small>
-          </div>
-      </div>
-  </div>
-</div>
-
     </div>
   </div>
 </div>
